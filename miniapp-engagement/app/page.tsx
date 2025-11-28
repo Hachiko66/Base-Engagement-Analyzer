@@ -39,7 +39,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [engagementData, setEngagementData] = useState<EngagementMetrics | null>(null);
   const [activePeriod, setActivePeriod] = useState<'7' | '30' | '90'>('7');
-  const router = useRouter();
+
 
   // Initialize the miniapp
   useEffect(() => {
