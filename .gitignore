@@ -4,51 +4,49 @@
 .env.local
 *.env.*
 
-# Logs and temp files
+# Logs
 *.log
-*.tmp
-*.swp
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.egg-info/
+dist/
+build/
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Python
-__pycache__/
+# System
+.DS_Store
+Thumbs.db
+
+# Compiled files
 *.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-env/
-ENV/
-.venv.bak/
-venv.bak/
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-
-# Node.js
-node_modules/
-
-# Java/Gradle
-target/
-.gradle/
-build/
-
-# C/C++
+*.class
 *.o
-*.obj
+*.exe
+*.dll
 *.so
 *.a
-*.dll
-*.exe
+*.obj
 *.out
 
-# Compression
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
 *.zip
 *.gz
 *.tar
@@ -71,8 +69,4 @@ build/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# System
-.DS_Store
-Thumbs.db
 ```
