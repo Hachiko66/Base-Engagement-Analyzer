@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
 }
 
 // GET endpoint to retrieve tip configuration
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     // Return configuration for tipping functionality
     const tipConfig = {
